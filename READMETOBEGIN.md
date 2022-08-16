@@ -18,6 +18,7 @@ Irei deixar o link do site oficial com a sintaxe de instalação abaixo e
 junto você pode encontrar toda a documentação de ambas bibliotecas.
 
 https://docs.tweepy.org/en/stable/install.html
+
 https://www.selenium.dev/documentation/webdriver/getting_started/install_library/
 
 Agora volte e entre no arquivo .py que está escrito em uma lingua que você entenda 
@@ -38,6 +39,7 @@ I will leave the link to the official site with the installation syntax below an
 together you can find documentation for both libraries.
 
 https://docs.tweepy.org/en/stable/install.html
+
 https://www.selenium.dev/documentation/webdriver/getting_started/install_library/
 
 Now go back and enter the .py file which is written in a language you understand
