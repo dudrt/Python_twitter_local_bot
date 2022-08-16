@@ -29,12 +29,21 @@ chrome.find_element_by_name('q').send_keys(Keys.ENTER)
 #maybe everything you want to get has at least class or name, but I highly recommend you take a look.
 #Go back and enter the XPATH_EN-PT.md document.
 
+#You can choose the best way to look for an element, on the website READMETOBEGIN.md, I left the selenium documentation website. 
+#By xpath, id, class, name, whatever you prefer.
+#On the same line you can give the command get_attribute("whatever you want to get").
+
 dolar=chrome.find_element_by_xpath(
     '//*[@id="knowledge-currency__updatable-data-column"]/div[1]/div[2]/span[1]'
 ).get_attribute("data-value")
 
+#And the basics are ready, you can already do cool things with it. Look for more commands on the official selenium website.
 
+#Now the most complicated part begins, which is connecting tweepy with twitter. For this part I recommend that you research 
+#some videos on how to get your keys and tokens.
 
+#Basically you must enter the twitter developer website https://developer.twitter.com, connect and login with your bot's twitter 
+#account and get the type 2 authentication level.
 
 #-------------------------------------------------entrar no twitter e publicar--------------------------
 
@@ -42,6 +51,5 @@ auth=tweepy.OAuthHandler('API KEY','API SECRET KEY')
 auth.set_access_token('ACCESS TOKEN','SECRET ACCESS TOKEN')
 
 tweet=tweepy.API(auth)
-
-tweet.update_status(printdolar+'\n'+printeuro+'\n'+printbit+'\n'+printimposto)
+tweet.update_status(dolar)
 
