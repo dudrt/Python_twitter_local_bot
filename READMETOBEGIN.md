@@ -4,6 +4,7 @@ Selenium/Tweepy - PT/EN
 Hello English user, if you find any errors in the translation, I apologize, everything was translated by an online translator!
 
 ---------------------------------------PT----------------------------------------
+
 Olá, aqui eu irei lhe ensinar não apenas a criar um bot no twitter
 ,mas a usar o selenium para "web scraping" e como postar qualquer 
 coisa no twitter tudo com python! 
@@ -23,6 +24,7 @@ Agora volte e entre no arquivo .py que está escrito em uma lingua que você ent
 e que comece os estudos!
 
 ---------------------------------------EN----------------------------------------
+
 Hello, here I will teach not only how to create a bot on twitter
 ,but using selenium for "web scraping" and how to post any
 thing on twitter all with python!
