@@ -5,8 +5,8 @@ Hello English user, if you find any errors in the translation, I apologize, ever
 
 ---------------------------------------PT----------------------------------------
 
-Olá, aqui eu irei lhe ensinar não apenas a criar um bot no twitter
-,mas a usar o selenium para "web scraping" e como postar qualquer 
+Olá, aqui eu irei lhe ensinar não apenas a criar um bot no twitter,
+mas a usar o selenium para "web scraping" e como postar qualquer 
 coisa no twitter tudo com python! 
 
 Para começar, é desejavel que você entenda conceitos básicos de HTML,
