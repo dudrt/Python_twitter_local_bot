@@ -26,21 +26,20 @@ chrome.find_element_by_name('q').send_keys(Keys.ENTER)
 #----------------------------------------------------IMPORTANT-------------------------------------------------------------------------------------
 #this is a part you need to pay attention to. Now you will find what you want from a page or search, you know that every html page has elements, 
 #some have id, class, name, but some don't, in these cases you will need to get the element's XPATH.
-#Go back and enter the XPATH-EN/PT document.
+#maybe everything you want to get has at least class or name, but I highly recommend you take a look.
+#Go back and enter the XPATH_EN-PT.md document.
 
 dolar=chrome.find_element_by_xpath(
     '//*[@id="knowledge-currency__updatable-data-column"]/div[1]/div[2]/span[1]'
 ).get_attribute("data-value")
 
-printdolar="💵 DÓLAR ESTÁ VALENDO R$:"+dolar
-#fim pegar dolar
-#pegar euro
+
 
 
 #-------------------------------------------------entrar no twitter e publicar--------------------------
 
-auth=tweepy.OAuthHandler('USqLBQ0zjqbcev8okvdBAKXyS','PSmnGWY7aOV5jNa5Eq7XHlr6ZDHuGhRYi8mwOcInt0K9BUCUEG')
-auth.set_access_token('1539790993054220288-XpoKDanVudK6jWec9NZ9QabyluaAUC','YScK8t2xcbgYMjCekIuqqin1EY9F9lvow4c7yKcEiX5AK')
+auth=tweepy.OAuthHandler('API KEY','API SECRET KEY')
+auth.set_access_token('ACCESS TOKEN','SECRET ACCESS TOKEN')
 
 tweet=tweepy.API(auth)
 
