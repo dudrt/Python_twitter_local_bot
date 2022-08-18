@@ -1,13 +1,11 @@
-#!/usr/bin/env python
-# coding: utf-8
-#esta é uma parte na qual você precisa prestar atenção. Agora você irá encontrar oque quer de uma página ou pesquisa, você sabe que toda 
-#página html possui elementos, alguns possuem id, class,name, porém alguns não possuem, nestes casos você precisará pegar o XPATH do elemento.
-
-
+#To start we will need to import at least three libraries.
 
 from selenium import webdriver
+#Selenium webdriver will be our browser.
 from selenium.webdriver.common.keys import Keys
+#Keys will be used by our browser to understand the keyboard keys such as return.
 import tweepy
+#tweepy is the library we will use to connect to twitter.
 
 
 #To start, we need to set a variable that will be our browser.Here I created it as "Chrome" because it will be the browser that I will use.
@@ -24,7 +22,7 @@ chrome.find_element_by_name('q').send_keys("dolar")
 chrome.find_element_by_name('q').send_keys(Keys.ENTER)
 #right after that it will search and find on a page.
 #----------------------------------------------------IMPORTANT-------------------------------------------------------------------------------------
-#this is a part you need to pay attention to. Now you will find what you want from a page or search, you know that every html page has elements, 
+#This is a part you need to pay attention to. Now you will find what you want from a page or search, you know that every html page has elements, 
 #some have id, class, name, but some don't, in these cases you will need to get the element's XPATH.
 #maybe everything you want to get has at least class or name, but I highly recommend you take a look.
 #Go back and enter the XPATH_EN-PT.md document.
@@ -45,11 +43,26 @@ dolar=chrome.find_element_by_xpath(
 #Basically you must enter the twitter developer website https://developer.twitter.com, connect and login with your bot's twitter 
 #account and get the type 2 authentication level.
 
-#-------------------------------------------------entrar no twitter e publicar--------------------------
+#-------------------------------------------------Join twitter and post--------------------------
 
-auth=tweepy.OAuthHandler('API KEY','API SECRET KEY')
-auth.set_access_token('ACCESS TOKEN','SECRET ACCESS TOKEN')
+#Now that you've got the permission level needed to post things on twitter.
+#To post a message you just need these few codes.
 
-tweet=tweepy.API(auth)
+verify=tweepy.OAuthHandler('API KEY','API SECRET KEY')
+
+verify.set_access_token('ACCESS TOKEN','SECRET ACCESS TOKEN')
+
+#In this part it is as if the "verify" variable saved its key and token and validated when called by the api.
+tweet=tweepy.API(verify)
+#And that's it, to post a sentence on twitter just give the following command
 tweet.update_status(dolar)
+#In this case I'm posting the content of the dollar variable, but to post a phrase or word you just have to put it in "quotes"
+
+#------------------------------------------------THANKS----------------------------------------
+#I hope I managed to teach you something, if you need any help that is within my reach call me on discord.
+#eduard#8394
+
+#If you prefer or can't find me on discord, comment here and I'll answer you. Thanks!
+
+
 
