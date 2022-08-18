@@ -27,7 +27,7 @@ chrome.find_element_by_name('q').send_keys(Keys.ENTER)
 #maybe everything you want to get has at least class or name, but I highly recommend you take a look.
 #Go back and enter the XPATH_EN-PT.md document.
 
-#You can choose the best way to look for an element, on the website READMETOBEGIN.md, I left the selenium documentation website. 
+#You can choose the best way to look for an element(on the documment READMETOBEGIN.md, I left the selenium documentation website).
 #By xpath, id, class, name, whatever you prefer.
 #On the same line you can give the command get_attribute("whatever you want to get").
 
