@@ -23,6 +23,14 @@ chrome.find_element_by_name('q').send_keys("dolar")
 #Novamente iremos identificar o elemento de pesquisa e desta vez, falaremos para o nosso navegador clicar no enter.
 chrome.find_element_by_name('q').send_keys(Keys.ENTER)
 #----------------------------------------------------------Importante-----------------------------------------
+#Esta é uma parte que você precisa prestar atenção. Agora você encontrará o que deseja em uma página ou pesquisa, sabemos 
+#que toda página html tem elementos,alguns possuem id, class, name, mas outros não, nestes casos você precisará obter o XPATH do elemento.
+#talvez tudo o que você deseja obter tenha pelo menos classe ou nome, mas eu recomendo que você dê uma olhada em como pegar o XPATH de um elemento
+#Então volte e veja o documento XPATH_EN-PT.md.
+
+#Você pode escolher a melhor maneira de procurar um elemento, no documento READMETOBEGIN.md, deixei o site de documentação do selenium.
+#Por xpath, id, class, name, o que você preferir.
+#Na mesma linha você pode dar o comando get_attribute("whatever you want to get").
 
 dolar=chrome.find_element_by_xpath(
     '//*[@id="knowledge-currency__updatable-data-column"]/div[1]/div[2]/span[1]'
